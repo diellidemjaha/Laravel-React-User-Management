@@ -4,12 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function User() {
-
-//     async componentDidMount() {
-//     const res = await axios.get('http://localhost:8000/api/users');
-//     console.log(res);
-// };
-const [users , setUsers] = useState([])
+const [users , setUsers] = useState([]);
 
 const getUsers = () =>{
     axios.get('http://localhost:8000/api/users').then(

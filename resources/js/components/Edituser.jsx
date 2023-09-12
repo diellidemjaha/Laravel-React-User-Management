@@ -5,8 +5,7 @@ import axios from 'axios';
 
 function Edituser() {
     const navigate = useNavigate('');
-    const { id } = useParams()
-    // console.log("parametri", id)
+    const { id } = useParams();
     const [userData, setUserData] = useState({
         name: '',
         profession: '',
@@ -35,9 +34,6 @@ function Edituser() {
         }
         axios.put(`http://localhost:8000/api/edit-user/${id}`,body).then(
             data => {
-                // console.log("api", data?.data?.users)
-                // console.log(data.message);
-                // alert(data.data.message)
 
                 swal({
                     title: "Successfully updated!",
@@ -62,23 +58,8 @@ function Edituser() {
 
     useEffect(() => {
         getUsers()
-        // const user_id = this.props.match.params.id;
-        // console.log(user_id);
     }, [])
 
-    //    const editUser = async (e) => {
-    //         e.preventDefault();
-    //         const res = await axios.post('http://localhost:8000/api/add-user/', userData).then(navigate('/'));
-
-    //     if(res.data.status === 200) 
-    //     {
-    //         console.log(res.data.message); 
-    //     }
-
-
-
-    //     // console.log("add user" , userData)
-    //     }
 
     return (
         <div className='container'>
