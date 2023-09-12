@@ -12,8 +12,7 @@ Before you begin, make sure you have the following software and dependencies ins
 
 Access the application in your web browser:
 
-Laravel backend: http://localhost:8000
-React frontend: http://localhost:3000
+Laravel backend + React UI preset (frontend) can be accessed here: http://localhost:8000
 You're now ready to use and customize the user management system as per your requirements.
 
 # Features
