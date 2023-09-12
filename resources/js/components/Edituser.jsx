@@ -5,8 +5,7 @@ import axios from 'axios';
 
 function Edituser() {
     const navigate = useNavigate('');
-    const { id } = useParams()
-    // console.log("parametri", id)
+    const { id } = useParams();
     const [userData, setUserData] = useState({
         name: '',
         profession: '',
