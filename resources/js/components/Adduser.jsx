@@ -25,7 +25,7 @@ const navigate = useNavigate('');
 
    const saveUser = async (e) => {
         e.preventDefault();
-        const res = await axios.post('http://localhost:8000/api/add-user/', userData).then(navigate('/'));
+        const res = await axios.post('http://localhost:8000/api/add-user/', userData);
 
     if(res.data.status === 200) 
     {
@@ -36,6 +36,7 @@ const navigate = useNavigate('');
             icon: "success",
             button: "OK",
           });
+          navigate('/');
     }
 
 
