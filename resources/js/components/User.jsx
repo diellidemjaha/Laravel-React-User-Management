@@ -73,7 +73,6 @@ const deleteStudent = (id) => {
                                             <th>{el?.email}</th>
                                             <th>{el?.phone}</th>
                                             <th><Link to={`Edituser/${el?.id}`} className='btn btn-sm text-light bg-success'>Edit</Link>
-                                                {/* <button className='btn btn-sm text-light bg-success'onClick={()=> getId(el?.id)}>edit</button> */}
                                                 </th>
                                             <th>
                                                 <button onClick={() => deleteStudent(el.id)} className='btn btn-sm text-light bg-danger'>delete</button></th>
